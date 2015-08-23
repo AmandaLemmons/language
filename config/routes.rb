@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   resources :interested_users
 
+  get 'thanks' => 'interested_users#thanks', as: :thanks
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

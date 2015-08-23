@@ -6,7 +6,7 @@ class InterestedUsersController < ApplicationController
   def create
     @interested_user = InterestedUser.new params.require(:interested_user).permit(:email)
     @interested_user.save
-    redirect_to roots_path
+    redirect_to thanks_path
 
   end
 
